@@ -2,6 +2,10 @@
 
 Meu site pessoal desenvolvido para apresentar meus projetos, habilidades e trajetória como desenvolvedor.
 
+## 📷 Preview do Projeto
+
+![Preview do Projeto](./preview.png)
+
 📌 Sobre o Projeto
 
 Este é meu portfólio pessoal, criado com o objetivo de mostrar meus conhecimentos em desenvolvimento web e compartilhar meus projetos.
