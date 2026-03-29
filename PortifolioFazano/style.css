@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #3b2a27;
+    color: white;
+}
+
+header {
+    background: #4b3631;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 10px solid #EC5B13;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+nav ul li a:hover {
+    transform: scale(1.20);
+    color: #EC5B13;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+    font-size: 23px;
+}
+
+.logo {
+    background-color: #EC5B13;
+    border-radius: 15px;
+    height: 50px;
+    width: 50px;
+    transform: scale(1.20);
+}
+
+.logo img {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.status {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 6px 13px;
+    border-radius: 20px;
+    border: 1px solid #ff6a00;
+    color: #ff6a00;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.texto {
+    max-width: 900px;
+}
+
+.sobrenome {
+    color: #EC5B13;
+}
+
+.texto h1 {
+    font-size: 120px;
+    margin: 10px 0;
+}
+
+.texto h2 {
+    color: #d8b4a0;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.texto p {
+    padding: 30px;
+    font-size: 25px;
+}
+
+button {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    background: #a36d5c;
+    color: white;
+    font-size: 25Px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #c98c77;
+}
+
+.foto img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+section {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.habilidade {}
+
+.titulo-habilidade {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+    min-height: 60vh;
+}
+
+.skillJava {
+    background: #cc383827;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    height: 200px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.skillJava p {
+    padding: 20px
+}
+
+.skillJava:hover {
+    background: #af3c3c;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.skillPython {
+    background: #294e7144;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    height: 200px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.skillPython p {
+    padding: 20px
+}
+
+.skillPython:hover {
+    background: #294e71;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.skillHtml {
+    background: #e7a73165;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    height: 200px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.skillHtml p {
+    padding: 20px
+}
+
+.skillHtml:hover {
+    background: #e7a731ce;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.skillCss {
+    background: #089add36;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    height: 200px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.skillCss p {
+    padding: 20px
+}
+
+.skillCss:hover {
+    background: #089addd7;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.skillJavaScrip {
+    background: #ffd60857;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    height: 200px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.skillJavaScrip p {
+    padding: 20px;
+}
+
+.skillJavaScrip:hover {
+    background: #ffd608ad;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.skillSql {
+    background: #0808084d;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    height: 200px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.skillSql p {
+    padding: 20px;
+}
+
+.skillSql:hover {
+    background: #080808;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.skill img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.skill:hover img {
+    transform: scale(1.1);
+}
+
+.logo-java {
+    background-image: url(img/java.png);
+    height: 100px;
+    width: 100px;
+    /* SUA FOTO */
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    background: #2a1d1a;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.sobre {
+    padding-top: 40px;
+    min-height: 90vh;
+}
+
+.titulo-sobre-min {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+    height: 20vh;
+    font-size: 70px;
+}
+
+.img-move2 {
+    animation: flutuar 3s ease-in-out infinite alternate;
+    width: 700px;
+}
+
+.sobremin {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #4b3631;
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 70vh;
+    flex-direction: column;
+}
+
+.descricao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    background-color: #77412863;
+    border-radius: 10px;
+    max-width: 800px;
+    height: 300PX;
+    border-left: 4px solid #EC5B13;
+    padding-left: 16px;
+}
+
+.status-fazano {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.status-sobre {}
+
+.img-move {
+    width: 200px;
+    animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
+
+.titulo-projetos {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 60px;
+}
+
+.titulo-projetos span {
+    color: #EC5B13;
+}
+
+.container-projetos {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.card-projeto {
+    width: 550px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* ESSENCIAL */
+    display: flex;
+    flex-direction: column;
+    background: #4b3631;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.card-projeto:hover {
+    transform: scale(1.03);
+}
+
+
+/* METADE DE CIMA (IMAGEM) */
+
+.card-img {
+    height: 50%;
+    background-image: url(img/foto_portifolio.png);
+    /* SUA FOTO */
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* METADE DE BAIXO */
+
+.card-info {
+    height: 50%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #5a403a;
+}
+
+
+/* TÍTULO */
+
+.card-info h3 {
+    margin: 0;
+    padding: 10px;
+    color: #EC5B13;
+}
+
+
+/* TEXTO */
+
+.card-info p {
+    font-size: 14px;
+    color: #d8b4a0;
+    line-height: 1.4;
+}
+
+
+/* BOTÕES */
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+
+/* BOTÃO GITHUB */
+
+.github {
+    background: #2a1d1a;
+    color: white;
+}
+
+.github:hover {
+    background: #000;
+}
+
+
+/* BOTÃO SITE */
+
+.site {
+    background: #EC5B13;
+    color: white;
+}
+
+.site:hover {
+    background: #ff6a00;
+}
+
+@media (max-width: 500px) {
+    .card-projeto {
+        width: 100%;
+        height: auto;
+    }
+    .card-img {
+        height: 200px;
+    }
+    .card-info {
+        height: auto;
+    }
+}
+
+.formacao {
+    padding: 30px;
+    border-radius: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.titulo-formacao {
+    font-size: 70px;
+}
+
+.img-formacao {
+    width: 900px;
+    height: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* ESSENCIAL */
+    display: flex;
+    flex-direction: column;
+    background: #4b3631;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+.img-senai {
+    height: 600px;
+    width: 900px;
+    border-radius: 10px;
+}
+
+.container-formacao {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #4b3631;
+}
+
+.curriculo {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+
+/* título */
+
+.titulo-curriculo {
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+.titulo-curriculo span {
+    color: #EC5B13;
+}
+
+
+/* container geral */
+
+.curriculo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/* caixa do pdf */
+
+.curriculo-box {
+    width: 80%;
+    height: 700px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border: 2px solid #EC5B13;
+    transition: 0.3s;
+}
+
+
+/* efeito hover */
+
+.curriculo-box:hover {
+    transform: scale(1.02);
+}
+
+
+/* pdf */
+
+.curriculo-box iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* botões */
+
+.acoes-curriculo {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* botão visualizar */
+
+.btn-ver {
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid #EC5B13;
+    color: #EC5B13;
+    transition: 0.3s;
+}
+
+.btn-ver:hover {
+    background: #EC5B13;
+    color: white;
+}
+
+
+/* botão download */
+
+.btn-download {
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: #EC5B13;
+    color: white;
+    transition: 0.3s;
+}
+
+.btn-download:hover {
+    background: #ff6a00;
+}
+
+.curriculo-box {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: aparecer 1s ease forwards;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
